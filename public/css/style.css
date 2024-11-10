@@ -1,0 +1,34 @@
+.info{
+    background-image: url("../images/fondo1.3.jpeg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+  }
+  @media (max-width: 768px) {
+    .info{
+        background-image: url("../images/img2.png");
+    }
+  }
+
+.gallery{
+  background-color: rgb(253, 218, 247);
+}
+
+.zoomP{
+  /* Aumentamos la anchura y altura durante 2 segundos * */
+  transition:width 1.1s,height 1.1s,transform 1.1s;
+  -moz-transition:width 1.1s,height 1.1s,-moz-transform 1.1s;
+  -webkit-transition:width 1.2s,height 1.1s,-webkit-transform 1.1s;
+  -o-transition:width 1.1s,height 1.1s,-o-transform 1.1s;
+}
+.zoomP:hover{
+  /* /tranformamos el elemento al pasar el mouse por encima al doble de */
+  /* su tamano con scale(2).* */
+  transform:scale(1.05); /*(150%zoom Note:if the zoom is too large,it will go outside of the viewport)*/
+  -webkit-transform:scale(1.05);transform:scale(1.05)
+
+}
+
+footer{
+  background-color: #fddaf7;
+  color: rgb(0, 0, 0);
+}
